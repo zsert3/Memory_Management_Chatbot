@@ -1,27 +1,27 @@
 [
 {
   "directory": "/home/code/projects/Memory_Management_Chatbot/build",
-  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatbot.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatbot.cpp",
+  "command": "/bin/g++-9 -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatbot.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatbot.cpp",
   "file": "/home/code/projects/Memory_Management_Chatbot/src/chatbot.cpp"
 },
 {
   "directory": "/home/code/projects/Memory_Management_Chatbot/build",
-  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatgui.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatgui.cpp",
+  "command": "/bin/g++-9 -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatgui.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatgui.cpp",
   "file": "/home/code/projects/Memory_Management_Chatbot/src/chatgui.cpp"
 },
 {
   "directory": "/home/code/projects/Memory_Management_Chatbot/build",
-  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatlogic.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatlogic.cpp",
+  "command": "/bin/g++-9 -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/chatlogic.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/chatlogic.cpp",
   "file": "/home/code/projects/Memory_Management_Chatbot/src/chatlogic.cpp"
 },
 {
   "directory": "/home/code/projects/Memory_Management_Chatbot/build",
-  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/graphedge.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/graphedge.cpp",
+  "command": "/bin/g++-9 -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/graphedge.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/graphedge.cpp",
   "file": "/home/code/projects/Memory_Management_Chatbot/src/graphedge.cpp"
 },
 {
   "directory": "/home/code/projects/Memory_Management_Chatbot/build",
-  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/graphnode.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/graphnode.cpp",
+  "command": "/bin/g++-9 -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0 -isystem /usr/include/wx-3.0  -pthread -g -std=gnu++17 -o CMakeFiles/membot.dir/src/graphnode.cpp.o -c /home/code/projects/Memory_Management_Chatbot/src/graphnode.cpp",
   "file": "/home/code/projects/Memory_Management_Chatbot/src/graphnode.cpp"
 }
 ]
