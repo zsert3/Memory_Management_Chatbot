@@ -44,7 +44,83 @@ ChatBot::~ChatBot()
 
 //// STUDENT CODE
 ////
+ChatBot::ChatBot(const ChatBot &source) // 2: copy constructor
+{
+    //data handles (owned)
+    _image = new wxBitmap();
+    *_image = *source._image;
 
+    // data handles (not owned)
+    _chatLogic = source._chatLogic;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+
+    std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
+}
+
+ChatBot& ChatBot::operator=(const ChatBot &source) // 3: copy assignment operator
+{
+    std::cout << "ASSIGNING content of instance " << &source << " to instance " << this << std::endl;
+    if(this == &source)
+        return *this;
+    
+    //data handles (owned)
+    delete[] _image;
+    _image = new wxBitmap();
+    *_image = *source._image;
+
+    // data handles (not owned)
+    _chatLogic = source._chatLogic;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+
+    return *this;
+}
+
+ChatBot::ChatBot(ChatBot &&source) // 4: move constructor
+{
+    std::cout << "MOVING constructor instance " << &source << " to instance " << this << std::endl;
+    //copy all to new 'source'
+    //data handles (owned)
+    _image = source._image;
+
+    // data handles (not owned)
+    _chatLogic = source._chatLogic;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+
+    // make source unusable after moving
+    source._image = nullptr;
+    source._chatLogic = 0;
+    source._currentNode = 0;
+    source._rootNode = 0;
+}
+
+ChatBot& ChatBot::operator=(ChatBot &&source) // 5: move assignment operator
+{
+    std::cout << "MOVING (assign) instance " << &source << " to instance " << this << std::endl;
+    if (this == &source)
+        return *this;
+    
+    delete[] _image;
+
+    //copy all to new 'source'
+    //data handles (owned)
+    _image = source._image;
+
+    // data handles (not owned)
+    _chatLogic = source._chatLogic;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+
+    // make source unusable after moving
+    source._image = nullptr;
+    source._chatLogic = 0;
+    source._currentNode = 0;
+    source._rootNode = 0;
+
+    return *this;
+}
 ////
 //// EOF STUDENT CODE
 
