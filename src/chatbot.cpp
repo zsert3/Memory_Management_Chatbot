@@ -52,9 +52,11 @@ ChatBot::ChatBot(const ChatBot &source) // 2: copy constructor
 
     // data handles (not owned)
     _chatLogic = source._chatLogic;
+    _chatLogic->SetChatbotHandle(this);
+    
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
-
+        
     std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
 }
 
@@ -71,6 +73,8 @@ ChatBot& ChatBot::operator=(const ChatBot &source) // 3: copy assignment operato
 
     // data handles (not owned)
     _chatLogic = source._chatLogic;
+    _chatLogic->SetChatbotHandle(this);
+    
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
 
@@ -86,6 +90,8 @@ ChatBot::ChatBot(ChatBot &&source) // 4: move constructor
 
     // data handles (not owned)
     _chatLogic = source._chatLogic;
+    _chatLogic->SetChatbotHandle(this);
+
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
 
@@ -110,14 +116,16 @@ ChatBot& ChatBot::operator=(ChatBot &&source) // 5: move assignment operator
 
     // data handles (not owned)
     _chatLogic = source._chatLogic;
+    _chatLogic->SetChatbotHandle(this);
+
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
 
     // make source unusable after moving
     source._image = nullptr;
-    source._chatLogic = 0;
-    source._currentNode = 0;
-    source._rootNode = 0;
+    source._chatLogic = nullptr;
+    source._currentNode = nullptr;
+    source._rootNode = nullptr;
 
     return *this;
 }
