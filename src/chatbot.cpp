@@ -67,8 +67,8 @@ ChatBot& ChatBot::operator=(const ChatBot &source) // 3: copy assignment operato
         return *this;
     
     //data handles (owned)
-    delete[] _image;
-    _image = new wxBitmap();
+    //delete[] _image;
+    //_image = new wxBitmap();
     *_image = *source._image;
 
     // data handles (not owned)
